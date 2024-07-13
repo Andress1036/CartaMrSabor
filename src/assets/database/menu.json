@@ -1,0 +1,47 @@
+
+{
+  "menu": [
+    {
+      "id": 1,
+      "titulo": "Menú",
+      "ingredientes": "Carne (res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, tajada de maduro y sopa.",
+      "img" : "../../assets/fotos/Menu.png"
+    },
+    {
+      "id": 2,
+      "titulo": "Seco",
+      "ingredientes": "Carne (res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, tajada de maduro.",
+      "img": "../../assets/fotos/Seco.png"
+    },
+    {
+      "id": 3,
+      "titulo": "Casero",
+      "ingredientes": "Carne (res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, frijol, tajada de maduro.",
+      "img": "../../assets/fotos/Casero.png"
+    },
+    {
+      "id": 4,
+      "titulo": "Bandeja",
+      "ingredientes": "Carne (res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, frijol, tajada de maduro, huevo y aguacate.",
+      "img": "../../assets/fotos/Bandeja.png"
+    },
+    {
+      "id": 5,
+      "titulo": "Combo",
+      "ingredientes": "Carne (res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), ensalada, papas y arepa gratinada.",
+      "img": "../../assets/fotos/Combo.png"
+    },
+    {
+      "id": 6,
+      "titulo": "Robalo",
+      "ingredientes": "Robalo apanado, arroz, papas, patacón, ensalada y sopa(opcional).",
+      "img": "../../assets/fotos/Robalo.png"
+    },
+    {
+      "id": 7,
+      "titulo": "Sancocho (solo sábados)",
+      "ingredientes": "Sancocho de Res, papa, platano, mazorca, yuca, hueso y aparte arroz con ensalada y aguacate.",
+      "img": "../../assets/fotos/Sancocho.png"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<h1>Menús</h1>
+<div class="container">
+  <div id="rowTest" class="row">
+
+@for (plato of menuList; track plato.id) {
+    <div class="col-12 col-md-6 col-lg-4">
+
+      <div class="card fixed-card">
+        <img src="{{ plato.img }}" class="card-img-top" alt="{{ plato.titulo }}"/>
+        <div class="card-body card-content">
+          <h5 class="card-title"><b>{{ plato.titulo }}</b></h5>
+          <p class="card-text">
+            <b>Ingredientes:</b> {{ plato.ingredientes }}
+          </p>
+        </div>
+      </div>
+
+    </div>
+    }
+
+
+
+  </div>
+</div>
