@@ -12,4 +12,11 @@ import { EspecialesComponent } from './especiales/especiales.component';
 })
 export class AppComponent{
 
+  scrollToTop(): void{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
 }
