@@ -8,6 +8,16 @@
   background-color:#eae7d2 ;
 }
 
+.navbar-nav{
+  flex-direction: row;
+}
+
+.nav-link{
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
 body {
   /* background-image: url('./assets/tablero2.jpg'); */
   background-color: darkgoldenrod;
