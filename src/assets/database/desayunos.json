@@ -3,15 +3,16 @@
   {
     "id": 1,
     "titulo": "Económico",
-    "ingredientes": "Huevos con o sin aliños, arepa tela con queso mozzarella y chocolate en agua o leche.",
-    "img": "../../assets/fotos/BandejaPaisa.png"
+    "ingredientes": "Huevos con o sin aliños(tomate y cebolla), arepa tela con queso mozzarella y chocolate en agua o leche.",
+    "img": "../../assets/fotos/Economico.png"
   },
   {
     "id": 2,
     "titulo": "Calentao",
-    "ingredientes": "Carne (res, cerdo, chicharron, molida o pechuga), arroz con frijol, huevos con o sin aliños, arepa tela con queso mozzarella y chocolate en agua o leche.",
-    "img": "../../assets/fotos/PuntaAnca.png"
+    "ingredientes": "Carne (res, cerdo, chicharron, molida o pechuga), arroz con frijol, huevos con o sin aliños(tomate y cebolla), arepa tela con queso mozzarella y chocolate en agua o leche.",
+    "img": "../../assets/fotos/Calentao.png"
   }
 ]
 
 }
+
