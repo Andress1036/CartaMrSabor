@@ -4,31 +4,31 @@
     {
       "id": 1,
       "titulo": "Menú",
-      "ingredientes": "Carne (res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, tajada de maduro y sopa.",
+      "ingredientes": "Carne (del día, res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, tajada de maduro y sopa.",
       "img" : "../../assets/fotos/Menu.png"
     },
     {
       "id": 2,
       "titulo": "Seco",
-      "ingredientes": "Carne (res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, tajada de maduro.",
+      "ingredientes": "Carne (del día, res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, tajada de maduro.",
       "img": "../../assets/fotos/Seco.png"
     },
     {
       "id": 3,
       "titulo": "Casero",
-      "ingredientes": "Carne (res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, frijol, tajada de maduro.",
+      "ingredientes": "Carne (del día, res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, frijol, tajada de maduro.",
       "img": "../../assets/fotos/Casero.png"
     },
     {
       "id": 4,
       "titulo": "Bandeja",
-      "ingredientes": "Carne (res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, frijol, tajada de maduro, huevo y aguacate.",
+      "ingredientes": "Carne (del día, res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, frijol, tajada de maduro, huevo y aguacate.",
       "img": "../../assets/fotos/Bandeja.png"
     },
     {
       "id": 5,
       "titulo": "Combo",
-      "ingredientes": "Carne (res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), ensalada, papas y arepa gratinada.",
+      "ingredientes": "Carne (del día, res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), ensalada, papas y arepa gratinada.",
       "img": "../../assets/fotos/Combo.png"
     },
     {
