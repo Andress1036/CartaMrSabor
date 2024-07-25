@@ -39,3 +39,8 @@ body {
     height: 20px;
 }
 
+#opcion:focus {
+  background-color:rgb(236, 209, 147);
+  margin-left: 5px;
+  border-radius: 20px;
+}
