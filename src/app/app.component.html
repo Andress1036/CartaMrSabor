@@ -2,15 +2,20 @@
 <nav class="navbar navbar-expand-lg sticky-top">
 
     <a id="sabor" class="navbar-brand" [routerLink]="['/menus']" (click)="scrollToTop()">
-      <img src="../assets/logo sin fondo.png" alt="logo" style="width: 80px; height: 70px; margin-right: 10px; margin-left: 7px;" ><strong>Mr Sabor</strong></a>
+      <img class="logo" src="../assets/logo sin fondo.png" alt="logo">
+      <img class="titulo" src="../assets/titulo.png" alt="titulo">
+    </a>
 
     <div class="navbar-nav">
 
-          <a class="nav-link" [routerLink]="['/menus']" (click)="scrollToTop()"><strong>Menús</strong></a>
+          <a class="nav-link" [routerLink]="['/menus']" (click)="scrollToTop()">
+            <img class="cubierto" src="../assets/cubiertos-sin fondo.png" alt="logo-cubierto"><strong>Menús</strong></a>
 
-          <a class="nav-link" [routerLink]="['/especiales']" (click)="scrollToTop()"><strong>Especiales</strong></a>
+          <a class="nav-link" [routerLink]="['/especiales']" (click)="scrollToTop()">
+            <img class="cubierto" src="../assets/cubiertos-sin fondo.png" alt="logo-cubierto"><strong>Especiales</strong></a>
 
-          <a class="nav-link" [routerLink]="['/desayuno']" (click)="scrollToTop()"><strong>Desayunos</strong></a>
+          <a class="nav-link" [routerLink]="['/desayuno']" (click)="scrollToTop()">
+            <img class="cubierto" src="../assets/cubiertos-sin fondo.png" alt="logo-cubierto"><strong>Desayunos</strong></a>
 
 
 
