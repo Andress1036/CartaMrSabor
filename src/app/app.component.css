@@ -44,4 +44,5 @@ body {
   background-color:rgb(236, 209, 147);
   margin-left: 5px;
   border-radius: 20px;
+  border: 2px solid rgb(39, 37, 37);
 }
