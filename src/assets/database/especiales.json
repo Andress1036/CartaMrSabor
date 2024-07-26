@@ -4,49 +4,55 @@
     "id": 1,
     "titulo": "Bandeja Paisa",
     "ingredientes": "Chicharron, chorizo, carne molida, arroz, papas, ensalada, frijol, tajada de maduro, huevo y aguacate.",
-    "img": "../../assets/fotos/BandejaPaisa.png"
+    "img": "../../assets/fotos/BandejaPaisaP.png"
   },
   {
     "id": 2,
     "titulo": "Punta De Anca",
     "ingredientes": "Punta de anca asada en la plancha, ensalada con aguacate, papas y arepa gratinada.",
-    "img": "../../assets/fotos/PuntaAnca.png"
+    "img": "../../assets/fotos/PuntaAncaP.png"
   },
    {
      "id": 3,
      "titulo": "Tilapía",
      "ingredientes": "Tilapía frita, arroz, ensalada, aguacate, patacón, papas y sopa(opcional).",
-     "img": "../../assets/fotos/Tilapia.png"
+     "img": "../../assets/fotos/TilapiaP.png"
    },
   {
     "id": 4,
     "titulo": "Trucha",
     "ingredientes": "Trucha frita apanada, arroz, ensalada, aguacate, patacón, papas y sopa(opcional).",
-    "img": "../../assets/fotos/Trucha.png"
+    "img": "../../assets/fotos/TruchaP.png"
   },
   {
     "id": 5,
     "titulo": "Chuzo De Pollo",
     "ingredientes": "Chuzo de pollo BBQ, ensalada con aguacate, papas y arepa gratinada.",
-    "img": "../../assets/fotos/ChuzoPollo.png"
+    "img": "../../assets/fotos/ChuzoPolloP.png"
   },
   {
     "id": 6,
     "titulo": "Churrasco",
     "ingredientes": "Churrazco asado en la plancha, ensalada con aguacate, papas y arepa gratinada.",
-    "img": "../../assets/fotos/Churrasco.png"
+    "img": "../../assets/fotos/ChurrascoP.png"
   },
   {
     "id": 7,
     "titulo": "Costillas BBQ",
     "ingredientes": "Costillas BBQ, ensalada con aguacate, papas y arepa gratinada.",
-    "img": "../../assets/fotos/Costillas.png"
+    "img": "../../assets/fotos/CostillasP.png"
   },
   {
     "id": 8,
     "titulo": "Cazuela",
     "ingredientes": "Chicharron picado, chorizo picado, maduros picados, frijol, aguacate picado y aparte arroz con ensalada.",
-    "img": "../../assets/fotos/Cazuela.png"
+    "img": "../../assets/fotos/CazuelaP.png"
+  },
+  {
+    "id": 9,
+    "titulo": "Pechuga Especial",
+    "ingredientes": "Pechuga grande, ensalada con aguacate, papas y arepa gratinada.",
+    "img": "../../assets/fotos/PechugaEspecialP.png"
   }
 ]
 

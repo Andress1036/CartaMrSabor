@@ -1,5 +1,8 @@
 .card {
   margin-top: 7px;
+  background-image: url("../../assets/tablero2.jpg");
+    border-color: aliceblue;
+    color: aliceblue;
 }
 
 h1 {
@@ -18,6 +21,8 @@ h1 {
 }
 
 img {
+  border-bottom: 2px solid;
+    border-color: aliceblue;
   display: grid;
   height: 250px;
 }
