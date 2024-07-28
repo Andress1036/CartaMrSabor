@@ -3,6 +3,7 @@
   background-image: url("../../assets/tablero2.jpg");
     border-color: aliceblue;
     color: aliceblue;
+    margin-bottom: 4px;
 }
 
 h1 {
@@ -11,7 +12,7 @@ h1 {
 }
 
 .fixed-card {
-  height: 450px;
+  height: auto;
   /* Tamaño fijo deseado */
 }
 

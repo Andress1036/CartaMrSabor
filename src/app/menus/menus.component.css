@@ -3,7 +3,11 @@
   background-image: url("../../assets/tablero2.jpg");
   border-color: aliceblue;
   color: aliceblue;
+  margin-bottom: 4px;
+}
 
+#carne-dia{
+  height: auto;
 }
 
 h1{
@@ -13,7 +17,7 @@ h1{
 }
 
 .fixed-card {
-  height: 420px;
+  height: auto;
   /* Tamaño fijo deseado */
 }
 
