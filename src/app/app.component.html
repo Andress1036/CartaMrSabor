@@ -1,9 +1,10 @@
 
 <nav class="navbar navbar-expand-lg sticky-top">
 
-    <a id="sabor" class="navbar-brand" [routerLink]="['/menus']" (click)="scrollToTop()">
+
+    <a id="sabor" class="navbar-brand">
       <img class="logo" src="../assets/logo sin fondo.png" alt="logo">
-      <img class="titulo" src="../assets/titulo.png" alt="titulo">
+      <img class="titulo" [routerLink]="['/menus']" (click)="scrollToTop()" src="../assets/titulo.png" alt="titulo">
     </a>
 
     <div class="navbar-nav">
@@ -16,9 +17,6 @@
 
           <a id="opcion" class="nav-link" [routerLink]="['/desayuno']" (click)="scrollToTop()">
             <img class="cubierto" src="../assets/cubiertos-sin fondo.png" alt="logo-cubierto"><strong>Desayunos</strong></a>
-
-
-
 
   </div>
 </nav>
