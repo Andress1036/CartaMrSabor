@@ -9,7 +9,7 @@
 h1 {
   color: darkgrey;
   text-align: center;
-
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
 .fixed-card {
@@ -31,5 +31,5 @@ img {
 
 .card-title {
   text-align: center;
-
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
