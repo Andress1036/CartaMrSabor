@@ -40,13 +40,13 @@ body {
 }
 
 .cubierto{
-  width: 20px;
-  height: 15px;
+  width: 22px;
+  height: 17px;
 }
 
 #opcion:focus {
   background-color:rgb(236, 209, 147);
-  margin-left: 3px;
+  margin-left: 5px;
   border-radius: 20px;
   border: 2px solid rgb(39, 37, 37);
 }
