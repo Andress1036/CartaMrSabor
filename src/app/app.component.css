@@ -9,9 +9,9 @@ a{
 }
 
 footer {
-  color: black;
+  color:aliceblue;
   text-align: center;
-  background-color: #d0cfc7;
+  background-color: transparent;
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
     display: block;
     unicode-bidi: isolate;
@@ -66,4 +66,19 @@ body {
   height: 20px;
   width: 30px;
   margin-bottom: 5px;
+}
+
+.card {
+  margin-top: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: transparent;
+  border-color: aliceblue;
+  color: aliceblue;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.card-title{
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
