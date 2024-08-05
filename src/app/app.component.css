@@ -8,9 +8,15 @@ a{
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
+footer {
+  color: black;
+  text-align: center;
+  background-color: #d0cfc7;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
 .navbar{
   background-color:#d0cfc7 ;
-
 }
 
 .navbar-nav{
@@ -49,4 +55,10 @@ body {
   margin-left: 5px;
   border-radius: 20px;
   border: 2px solid rgb(39, 37, 37);
+}
+
+#mapa{
+  height: 20px;
+  width: 30px;
+  margin-bottom: 5px;
 }
