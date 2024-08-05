@@ -24,8 +24,8 @@ footer {
 }
 
 .nav-link{
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 
 }
 
@@ -46,8 +46,8 @@ body {
 }
 
 .cubierto{
-  width: 25px;
-    height: 20px;
+  width: 22px;
+  height: 17px;
 }
 
 #opcion:focus {
