@@ -13,6 +13,9 @@ footer {
   text-align: center;
   background-color: #d0cfc7;
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    display: block;
+    unicode-bidi: isolate;
+    padding-bottom: 4px;
 }
 
 .navbar{
@@ -28,6 +31,8 @@ footer {
   padding-right: 5px;
 
 }
+
+
 
 body {
   /* background-image: url('./assets/tablero2.jpg'); */
