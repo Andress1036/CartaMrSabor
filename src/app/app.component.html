@@ -1,13 +1,16 @@
 
-<nav class="navbar navbar-expand-lg sticky-top">
+<nav id="navbar1" class="navbar navbar-expand-lg">
 
 
-    <a id="sabor" class="navbar-brand">
-      <img class="logo" src="../assets/logo sin fondo.png" alt="logo">
-      <img class="titulo" [routerLink]="['/menus']" (click)="scrollToTop()" src="../assets/titulo.png" alt="titulo">
-    </a>
+  <a id="sabor" class="navbar-brand">
+    <img class="logo" src="../assets/logo sin fondo.png" alt="logo">
+    <img class="titulo" [routerLink]="['/menus']" (click)="scrollToTop()" src="../assets/titulo.png" alt="titulo">
+  </a>
 
-    <div class="navbar-nav">
+</nav>
+<nav id="navbar2" class="navbar navbar-expand-lg sticky-top">
+
+    <div class="navbar-nav ">
 
           <a id="opcion" class="nav-link" [routerLink]="['/menus']" (click)="scrollToTop()">
             <img class="cubierto" src="../assets/cubiertos-sin fondo.png" alt="logo-cubierto"><cite><strong>Menús</strong></cite></a>
