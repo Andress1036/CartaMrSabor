@@ -6,7 +6,9 @@
     margin-bottom: 4px;
 }
 
+
 h1 {
+  font-weight: 100;  
   color:aliceblue;
   text-align: center;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
@@ -21,8 +23,9 @@ h1 {
 .card-content {
   display: flex;
   flex-direction: column;
- 
-}
+  }
+
+
 
 img {
   margin-top: 7px;
@@ -31,6 +34,7 @@ img {
 }
 
 .card-title {
+  font-weight: 100; 
   margin-top: 7px;
   text-align: center;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;

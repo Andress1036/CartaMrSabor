@@ -4,7 +4,7 @@
 
   <a id="sabor" class="navbar-brand">
     <img class="logo" src="../assets/logo sin fondo.png" alt="logo">
-    <img class="titulo" [routerLink]="['/menus']" (click)="scrollToTop()" src="../assets/titulo.png" alt="titulo">
+    <img class="titulo" [routerLink]="['']" (click)="scrollToTop()" src="../assets/titulo.png" alt="titulo">
   </a>
 
 </nav>
@@ -12,13 +12,13 @@
 
     <div class="navbar-nav ">
 
-          <a id="opcion" class="nav-link" [routerLink]="['/menus']" (click)="scrollToTop()">
+          <a id="opcion" class="nav-link" [routerLink]="['']" fragment="menus" (click)="scrollToTop()">
             <img class="cubierto" src="../assets/cubiertos-sin fondo.png" alt="logo-cubierto"><cite><strong>Menús</strong></cite></a>
 
-          <a id="opcion" class="nav-link" [routerLink]="['/especiales']" (click)="scrollToTop()">
+          <a id="opcion" class="nav-link" [routerLink]="['']" fragment="especiales" (click)="scrollToTop()">
             <img class="cubierto" src="../assets/cubiertos-sin fondo.png" alt="logo-cubierto"><cite><strong>Especiales</strong></cite></a>
 
-          <a id="opcion" class="nav-link" [routerLink]="['/desayuno']" (click)="scrollToTop()">
+          <a id="opcion" class="nav-link" [routerLink]="['']" fragment="desayuno" (click)="scrollToTop()">
             <img class="cubierto" src="../assets/cubiertos-sin fondo.png" alt="logo-cubierto"><cite><strong>Desayunos</strong></cite></a>
 
   </div>
