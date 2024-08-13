@@ -30,13 +30,13 @@ h1{
 }
 
 img {
-  border-bottom: 2px solid;
-  border-color: aliceblue;
+  margin-top: 7px;
   display: grid;
   height: 250px;
 }
 
 .card-title{
+  margin-top: 7px;
   text-align: center;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }

@@ -10,7 +10,7 @@
 
       <div  id="carne-dia" class="card fixed-card">
         <div class="card-body card-content">
-          <h5 class="card-title"><cite><b>Menú día</b></cite></h5>
+          <h3 class="card-title"><cite><b>Menú día</b></cite></h3>
           <p class="card-text">
             Pregunta por el suculento y delicioso menú del día.
           </p>
@@ -23,9 +23,9 @@
     <div class="col-12 col-md-6 col-lg-4">
 
       <div class="card fixed-card">
+        <h3 class="card-title"><cite><b>{{ plato.titulo }}</b></cite></h3>
         <img src="{{ plato.img }}" class="card-img-top" alt="{{ plato.titulo }}"/>
-        <div class="card-body card-content">
-          <h5 class="card-title"><cite><b>{{ plato.titulo }}</b></cite></h5>
+        <div class="card-body card-content">         
           <p class="card-text">
             <b>Ingredientes:</b><br> {{ plato.ingredientes }}
           </p>

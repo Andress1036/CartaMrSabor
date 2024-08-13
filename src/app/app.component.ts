@@ -6,7 +6,7 @@ import { EspecialesComponent } from './especiales/especiales.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MenusComponent, MenusComponent, RouterLink, EspecialesComponent, ],
+  imports: [RouterOutlet, MenusComponent, RouterLink, EspecialesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
