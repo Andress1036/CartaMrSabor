@@ -6,6 +6,9 @@
   margin-bottom: 4px;
 }
 
+p{
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
 
 #carne-dia{
   height: auto;
