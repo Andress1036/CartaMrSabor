@@ -21,10 +21,25 @@
           <a id="opcion" class="nav-link" [routerLink]="['']" fragment="desayuno" (click)="scrollToTop()">
             <img class="cubierto" src="../assets/cubiertos-sin fondo.png" alt="logo-cubierto"><cite><strong>Desayunos</strong></cite></a>
 
+           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#QR">
+            <img class="cubierto" src="../assets/cubiertos-sin fondo.png" alt="logo-cubierto"/><cite><strong>QR</strong></cite></button>
+
   </div>
 </nav>
-
-
+<div class="modal" tabindex="-1" id="QR">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">QR Carta Mr Sabor</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="../assets/fotos/Carta Mr Sabor.png" alt="logo-cubierto"/>
+      </div>
+    </div>
+  </div>
+</div>
 
 <router-outlet />
 <footer>
