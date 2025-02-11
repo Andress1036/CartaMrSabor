@@ -40,3 +40,8 @@ img {
   text-align: center;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
+
+#precio{
+  text-align: center;
+  font-weight: bold;
+}

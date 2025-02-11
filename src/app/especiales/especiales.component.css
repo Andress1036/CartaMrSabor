@@ -11,7 +11,7 @@ p{
 }
 
 h1 {
-  font-weight: 100;  
+  font-weight: 100;
   color:aliceblue;
   text-align: center;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
@@ -37,8 +37,13 @@ img {
 }
 
 .card-title {
-  font-weight: 100; 
+  font-weight: 100;
   margin-top: 7px;
   text-align: center;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+#precio{
+  text-align: center;
+ font-weight: bold;
 }

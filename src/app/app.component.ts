@@ -6,7 +6,7 @@ import { EspecialesComponent } from './especiales/especiales.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MenusComponent, RouterLink, EspecialesComponent],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -26,7 +26,7 @@ export class AppComponent{
     const currentScrollPos = window.scrollY;
     const navbar2 = document.getElementById('navbar2');
 
-   
+
     if (this.prevScrollpos > currentScrollPos) {
       if (navbar2) navbar2.style.top = '0';
     } else {

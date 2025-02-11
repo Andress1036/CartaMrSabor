@@ -12,13 +12,16 @@
         <h3 class="card-title"><cite><b>{{ plato.titulo }}</b></cite></h3>
         <img src="{{ plato.img }}" class="card-img-top" alt="{{ plato.titulo }}"/>
         <div class="card-body card-content">
-         
+
           <p class="card-text">
             {{ plato.ingredientes }}
           </p>
+          <p class="card-text" id="precio">
+            $ {{ plato.precio }}
+          </p>
         </div>
-        
-        
+
+
       </div>
 
     </div>
