@@ -1,1 +1,17 @@
-
+ De los menus especiales 
+[
+{
+    "id": 5,
+    "titulo": "Chuzo De Pollo",
+    "ingredientes": "Chuzo de pollo BBQ, ensalada con aguacate, papas y arepa gratinada.",
+    "img": "../../assets/fotos/ChuzoPolloP.png",
+    "precio": "No Disponible"
+  },
+  {
+    "id": 9,
+    "titulo": "Pechuga Especial",
+    "ingredientes": "Pechuga grande, ensalada con aguacate, papas y arepa gratinada.",
+    "img": "../../assets/fotos/PechugaEspecialP.png",
+    "precio": "No Disponible"
+  }
+]
