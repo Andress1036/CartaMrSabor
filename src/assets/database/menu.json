@@ -6,8 +6,7 @@
       "titulo": "Menú",
       "ingredientes": "Carne (del día, res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, tajada de maduro y sopa.",
       "img" : "../../assets/fotos/MenuP.png",
-      "precio": "19.000
-      chiharron: $20.000"
+      "precio": "19.000"
     },
     {
       "id": 2,
