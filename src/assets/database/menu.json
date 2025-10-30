@@ -5,49 +5,49 @@
       "id": 1,
       "titulo": "Menú",
       "ingredientes": "Carne (del día, res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, tajada de maduro y sopa.",
-      "img" : "../../assets/fotos/MenuP.png",
+      "img" : "../../assets/fotos/MenuP.webp",
       "precio": "19.000"
     },
     {
       "id": 2,
       "titulo": "Seco",
       "ingredientes": "Carne (del día, res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, tajada de maduro.",
-      "img": "../../assets/fotos/SecoP.png",
+      "img": "../../assets/fotos/SecoP.webp",
       "precio": "17.000"
     },
     {
       "id": 3,
       "titulo": "Casero",
       "ingredientes": "Carne (del día, res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, frijol, tajada de maduro.",
-      "img": "../../assets/fotos/CaseroP.png",
+      "img": "../../assets/fotos/CaseroP.webp",
       "precio": "19.000"
     },
     {
       "id": 4,
       "titulo": "Bandeja",
       "ingredientes": "Carne (del día, res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), arroz, papas, ensalada, frijol, tajada de maduro, huevo y aguacate.",
-      "img": "../../assets/fotos/BandejaP.png",
+      "img": "../../assets/fotos/BandejaP.webp",
       "precio": "24.000"
     },
     {
       "id": 5,
       "titulo": "Combo",
       "ingredientes": "Carne (del día, res, cerdo, chicharron, molida, pechuga o sobrebarriga sudada), ensalada, papas y arepa gratinada.",
-      "img": "../../assets/fotos/ComboP.png",
+      "img": "../../assets/fotos/ComboP.webp",
       "precio": "17.000"
     },
     {
       "id": 6,
       "titulo": "Robalo",
       "ingredientes": "Robalo apanado, arroz, papas, patacón, ensalada y sopa(opcional).",
-      "img": "../../assets/fotos/RobaloP.png",
+      "img": "../../assets/fotos/RobaloP.webp",
       "precio": "21.000"
     },
     {
       "id": 7,
       "titulo": "Sancocho (solo sábados)",
       "ingredientes": "Sancocho de Res, papa, platano, mazorca, yuca, hueso y aparte arroz con ensalada y aguacate.",
-      "img": "../../assets/fotos/SancochoP.png",
+      "img": "../../assets/fotos/SancochoP.webp",
       "precio": "24.000"
     }
   ]

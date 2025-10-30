@@ -4,28 +4,28 @@
     "id": 1,
     "titulo": "Bandeja Paisa",
     "ingredientes": "Chicharron, chorizo, carne molida, arroz, papas, ensalada, frijol, tajada de maduro, huevo y aguacate.",
-    "img": "../../assets/fotos/BandejaPaisaP.png",
+    "img": "../../assets/fotos/BandejaPaisaP.webp",
     "precio": "45.000"
   },
   {
     "id": 2,
     "titulo": "Punta De Anca",
     "ingredientes": "Punta de anca asada en la plancha, ensalada con aguacate, papas y arepa gratinada.",
-    "img": "../../assets/fotos/PuntaAncaP.png",
+    "img": "../../assets/fotos/PuntaAncaP.webp",
     "precio": "45.000"
   },
    {
      "id": 3,
      "titulo": "Tilapía",
      "ingredientes": "Tilapía frita, arroz, ensalada, aguacate, patacón, papas y sopa(opcional).",
-     "img": "../../assets/fotos/TilapiaP.png",
+     "img": "../../assets/fotos/TilapiaP.webp",
      "precio": "45.000"
    },
   {
     "id": 4,
     "titulo": "Trucha",
     "ingredientes": "Trucha semi apanada, arroz, ensalada, aguacate, patacón, papas y sopa(opcional).",
-    "img": "../../assets/fotos/TruchaP.png",
+    "img": "../../assets/fotos/TruchaP.webp",
     "precio": "45.000"
   },
  
@@ -33,21 +33,21 @@
     "id": 6,
     "titulo": "Churrasco",
     "ingredientes": "Churrazco asado en la plancha, ensalada con aguacate, papas y arepa gratinada.",
-    "img": "../../assets/fotos/ChurrascoP.png",
+    "img": "../../assets/fotos/ChurrascoP.webp",
     "precio": "45.000"
   },
   {
     "id": 7,
     "titulo": "Costillas BBQ",
     "ingredientes": "Costillas BBQ, ensalada con aguacate, papas y arepa gratinada.",
-    "img": "../../assets/fotos/CostillasP.png",
+    "img": "../../assets/fotos/CostillasP.webp",
     "precio": "45.000"
   },
   {
     "id": 8,
     "titulo": "Cazuela De Frijol",
     "ingredientes": "Chicharron picado, chorizo picado, maduros picados, frijol, aguacate picado y aparte arroz con ensalada.",
-    "img": "../../assets/fotos/CazuelaP.png",
+    "img": "../../assets/fotos/CazuelaP.webp",
     "precio": "25.000"
   }
 ]
