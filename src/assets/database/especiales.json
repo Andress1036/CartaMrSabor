@@ -3,7 +3,7 @@
   {
     "id": 1,
     "titulo": "Bandeja Paisa",
-    "ingredientes": "Chicharron, chorizo, carne molida, arroz, papas, ensalada, frijol, tajada de maduro, huevo y aguacate.",
+    "ingredientes": "Chicharrón, chorizo, carne molida, arroz, papas, ensalada, frijol, tajada de maduro, huevo y aguacate.",
     "img": "../../assets/fotos/BandejaPaisaP.webp",
     "precio": "45.000"
   },
@@ -28,7 +28,7 @@
     "img": "../../assets/fotos/TruchaP.webp",
     "precio": "45.000"
   },
- 
+
   {
     "id": 6,
     "titulo": "Churrasco",
@@ -46,7 +46,7 @@
   {
     "id": 8,
     "titulo": "Cazuela De Frijol",
-    "ingredientes": "Chicharron picado, chorizo picado, maduros picados, frijol, aguacate picado y aparte arroz con ensalada.",
+    "ingredientes": "Chicharrón picado, chorizo picado, maduros picados, frijol, aguacate picado y aparte arroz con ensalada.",
     "img": "../../assets/fotos/CazuelaP.webp",
     "precio": "25.000"
   }

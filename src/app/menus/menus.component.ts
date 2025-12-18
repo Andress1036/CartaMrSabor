@@ -13,5 +13,6 @@ import jsonData from '../../assets/database/menu.json';
 export class MenusComponent {
 
   menuList: any[] = jsonData.menu;
+  menuDia: any = jsonData.menuDia;
 
 }

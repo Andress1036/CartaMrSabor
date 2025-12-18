@@ -50,5 +50,8 @@ img {
   text-align: center;
   font-weight: bold;
 }
-
+#espacio-invisible{
+  height: 50px;
+    color: transparent;
+}
 
