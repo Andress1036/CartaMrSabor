@@ -1,10 +1,10 @@
 {
   "menuDia": [
     {
-      "carneDia": "Cerdo o pechuga en salsa de champiñones",
-      "sopaDia": "Lentejas",
+      "carneDia": "Carne del día",
+      "sopaDia": "Sopa",
       "ensalada": "Lechuga con zanahoria",
-      "bebida": "Guayaba"
+      "bebida": "Jugo"
     }
   ],
   "menu": [
