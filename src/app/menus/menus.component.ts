@@ -1,6 +1,8 @@
 import { HttpClientModule } from '@angular/common/http';
-import { Component } from '@angular/core';
-import jsonData from '../../assets/database/menu.json';
+import { Component, OnInit } from '@angular/core';
+import {child, get, getDatabase, ref } from 'firebase/database';
+
+import { appFirebase } from '../app.component';
 
 
 @Component({
@@ -10,9 +12,23 @@ import jsonData from '../../assets/database/menu.json';
   templateUrl: './menus.component.html',
   styleUrl: './menus.component.css',
 })
-export class MenusComponent {
+export class MenusComponent implements OnInit {
+  menuList: any[] = [];
+  menuFirebase: any[]=[];
 
-  menuList: any[] = jsonData.menu;
-  menuDia: any = jsonData.menuDia;
+  ngOnInit(): void {
+    const db = getDatabase(appFirebase);
+    const dbRef = ref(db);
+    get(child(dbRef, 'menuDia')).then((snapshot) => {
+      if (snapshot.exists()) {
+        this.menuFirebase = Object.values(snapshot.val());
+      }
+    });
+    get(child(dbRef, 'menu')).then((snapshot) => {
+      if (snapshot.exists()) {
+        this.menuList = Object.values(snapshot.val());
+      }
+    });
 
+}
 }
