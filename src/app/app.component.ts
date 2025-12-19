@@ -2,6 +2,21 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { MenusComponent } from "./menus/menus.component";
 import { EspecialesComponent } from './especiales/especiales.component';
+import { initializeApp } from 'firebase/app'; // Importa la función para inicializar Firebase
+
+// Configuración de Firebase de las apps web
+const firebaseConfig = {
+  apiKey: 'AIzaSyArTdzzhUjcgfp-5bd7r1NcgaTA9lSuMDo',
+  authDomain: 'cartamrsabor.firebaseapp.com',
+  databaseURL: 'https://cartamrsabor-default-rtdb.firebaseio.com',
+  projectId: 'cartamrsabor',
+  storageBucket: 'cartamrsabor.firebasestorage.app',
+  messagingSenderId: '138217414534',
+  appId: '1:138217414534:web:10765ec52ca3a797e7d607',
+};
+
+// Inicializa Firebase
+export const appFirebase = initializeApp(firebaseConfig);
 
 @Component({
   selector: 'app-root',

@@ -5,24 +5,24 @@
 <div class="container">
   <div id="rowTest" class="row">
 
-
     <div class="col-12 col-md-6 col-lg-4">
 
       <div  id="carne-dia" class="card fixed-card">
         <div class="card-body card-content">
-          <h3 class="card-title"><cite><b>Menú día</b></cite></h3>
-          <h5>{{ menuDia[0].carneDia }}</h5>
+          <h3 class="card-title"><cite><b>Menú día Firebase</b></cite></h3>
+          <h5>{{ menuFirebase[0].carneDia }}</h5>
           <p class="card-text" id="menuDia">
-            <b>Sopa</b>: {{ menuDia[0].sopaDia }} - Frijoles - Consome de pescado
+            <b>Sopa</b>: {{ menuFirebase[0].sopaDia }} - Frijoles - Consome de pescado
             <br>
-            <b>Bebida</b>: {{ menuDia[0].bebida }} - Guarapo - Claro - Mazamorra
+            <b>Bebida</b>: {{ menuFirebase[0].bebida }} - Guarapo - Claro - Mazamorra
             <br>
-            <b>Ensalada </b>: Pico de gallo - {{ menuDia[0].ensalada }}
+            <b>Ensalada </b>: Pico de gallo - {{ menuFirebase[0].ensalada }}
           </p>
         </div>
       </div>
 
     </div>
+
 
 @for (plato of menuList; track plato.id) {
     <div class="col-12 col-md-6 col-lg-4">
