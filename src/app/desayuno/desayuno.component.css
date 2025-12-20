@@ -1,7 +1,7 @@
 .card {
   margin-top: 7px;
   background-color: transparent;
-    border-color: aliceblue;
+    border-color: rgb(255, 204, 0);
     color: aliceblue;
     margin-bottom: 4px;
 }
@@ -17,6 +17,25 @@ h1 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
+#titulo-principal {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  border-color: rgb(255, 204, 0);
+  border-radius: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#title-list {
+  border-bottom: 1px solid;
+  border-color: rgb(255, 204, 0);
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 15%;
+  padding-bottom: 5px;
+}
 
 .fixed-card {
   height: auto;
@@ -44,4 +63,9 @@ img {
 #precio{
   text-align: center;
   font-weight: bold;
+}
+
+#espacio-invisible {
+  height: 60px;
+  color: transparent;
 }
