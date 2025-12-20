@@ -18,11 +18,14 @@ p{
 
 .navbar{
   background-color:#d0cfc7 ;
+
 }
 
 #navbar2{
-
   transition: top 0.3s;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+
 }
 
 .navbar-hidden{
@@ -84,5 +87,13 @@ body {
 }
 
 .card-title{
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+
+
+#QR-div{
+  background-color: rgba(0, 0, 0, 0.888);
+  color: white;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
