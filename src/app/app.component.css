@@ -25,7 +25,10 @@ p{
   transition: top 0.3s;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+}
 
+.img-fluid{
+  border-radius: 8px;
 }
 
 .navbar-hidden{
