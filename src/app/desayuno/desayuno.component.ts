@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
-import jsonData from '../../assets/database/desayunos.json'
+
+import { Component, OnInit } from '@angular/core';
+import { child, get, getDatabase, ref } from 'firebase/database';
+
+import { appFirebase } from '../app.component';
 
 @Component({
   selector: 'app-desayuno',
@@ -8,8 +11,17 @@ import jsonData from '../../assets/database/desayunos.json'
   templateUrl: './desayuno.component.html',
   styleUrl: './desayuno.component.css'
 })
-export class DesayunoComponent {
+export class DesayunoComponent implements OnInit {
 
-  desayunos: any[] = jsonData.desayuno;
+  desayunos: any[] = [];
 
+  ngOnInit(): void {
+    const db = getDatabase(appFirebase);
+    const dbRef = ref(db);
+    get(child(dbRef, 'desayuno')).then((snapshot) => {
+      if (snapshot.exists()) {
+        this.desayunos = Object.values(snapshot.val());
+      }
+    });
+}
 }

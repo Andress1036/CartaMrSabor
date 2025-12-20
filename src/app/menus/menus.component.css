@@ -9,11 +9,17 @@
 p{
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
-
+#title-dia{
+  border: 1px solid;
+  border-color: rgb(255, 204, 0);
+  border-radius: 5px;
+}
 #carne-dia{
   height: auto;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   text-align: center;
+  border: 2px solid;
+  border-color: rgb(255, 204, 0);
 }
 
 h1{
