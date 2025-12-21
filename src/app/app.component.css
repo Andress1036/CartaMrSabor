@@ -17,7 +17,7 @@ p{
 }
 
 .navbar{
-  background-color:#d0cfc7 ;
+  background-color:black ;
 
 }
 
@@ -25,6 +25,8 @@ p{
   transition: top 0.3s;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+  background-color: black;
+  border-bottom: 1px solid rgb(255, 204, 0);
 }
 
 .img-fluid{
@@ -64,12 +66,17 @@ body {
   height: 17px;
 }
 
+#opcion{
+  color: blanchedalmond;
+  margin-right: 5px;
+}
 
 #opcion:focus {
-  background-color:rgb(236, 209, 147);
-  margin-left: 5px;
-  border-radius: 20px;
-  border: 2px solid rgb(39, 37, 37);
+  background-color:black;
+  border-radius: 5px;
+  border-bottom: 2px solid rgb(255, 204, 0);
+  padding-bottom: 1px;
+  margin-bottom: 5px;
 }
 
 #mapa{
