@@ -4,6 +4,7 @@
   border-color: rgb(255, 204, 0);
   color: aliceblue;
   margin-bottom: 4px;
+  border-radius: 25px;
 }
 
 p{
@@ -29,12 +30,14 @@ p{
   padding-bottom: 10px;
 }
 #carne-dia{
-  height: auto;
+
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   text-align: center;
   border: 2px solid;
   border-color: rgb(255, 204, 0);
+  border-radius: 25px;
 }
+
 #subtitulo-menudia{
   color: rgba(255, 204, 0, 0.769);
 }
