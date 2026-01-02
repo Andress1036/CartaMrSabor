@@ -34,7 +34,8 @@ export class AppComponent{
     });
   }
 
-  prevScrollpos = window.scrollY;
+  // Esto hace que la navbar2 se oculte al bajar y aparezca al subir
+  /* prevScrollpos = window.scrollY;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -49,5 +50,6 @@ export class AppComponent{
     }
     this.prevScrollpos = currentScrollPos;
   }
+    */
 
 }
