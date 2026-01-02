@@ -7,6 +7,12 @@
   border-radius: 25px;
 }
 
+#imgDia {
+  margin-top: 0px;
+  width: auto;
+  height: auto;
+}
+
 p{
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
