@@ -14,14 +14,14 @@ import { appFirebase } from '../app.component';
 })
 export class MenusComponent implements OnInit {
   menuList: any[] = [];
-  menuFirebase: any[]=[];
+  menuFirebase: any = {};
 
   ngOnInit(): void {
     const db = getDatabase(appFirebase);
     const dbRef = ref(db);
     get(child(dbRef, 'menuDia')).then((snapshot) => {
       if (snapshot.exists()) {
-        this.menuFirebase = Object.values(snapshot.val());
+        this.menuFirebase = snapshot.val();
       }
     });
     get(child(dbRef, 'menu')).then((snapshot) => {

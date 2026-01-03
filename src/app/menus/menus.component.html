@@ -9,8 +9,8 @@
         <div class="card-body card-content">
           <h3 class="card-title" id="title-dia"><cite><b>Menú día</b></cite></h3>
 
-          <h5>{{ menuFirebase[0].carneDia }}</h5>
-          <img src="{{ menuFirebase[0].img }}" alt="menu dia" id="imgDia"/>
+          <h5>{{ menuFirebase.carneDia }}</h5>
+          <img src="{{ menuFirebase.img }}" alt="menu dia" id="imgDia"/>
           <p class="card-text" id="menuDia">
             <b id="subtitulo-menudia">Carnes</b>
             <br>
@@ -18,14 +18,14 @@
             <br>
             <b id="subtitulo-menudia">Sopas</b>
             <br>
-            {{ menuFirebase[0].sopaDia }} - Frijoles - Consome de pescado
+            {{ menuFirebase.sopaDia }} - Frijoles - Consome de pescado
             <br>
             <b id="subtitulo-menudia">Bebidas</b>
             <br>
-            {{ menuFirebase[0].bebida }} - Guarapo - Claro - Mazamorra
+            {{ menuFirebase.bebidaDia }} - Guarapo - Claro - Mazamorra
             <br>
             <b id="subtitulo-menudia">Ensaladas</b>
-            <br>{{ menuFirebase[0].ensalada }}
+            <br>{{ menuFirebase.ensalada }}
           </p>
         </div>
       </div>
