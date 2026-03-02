@@ -4,7 +4,11 @@
       "carneDia": "Cerdo o pechuga en salsa de BBQ",
       "sopaDia": "Crema de ahuyama",
       "ensalada": "Remolacha",
-      "bebida": "Mango"
+      "bebida": "Mango",
+      "imgList": [
+
+       "../../assets/fotos/dia/cocacola.webp"
+      ]
     }
   ],
   "menu": [

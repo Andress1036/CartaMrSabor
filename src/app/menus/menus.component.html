@@ -1,39 +1,42 @@
-<h1 id="espacio-invisible"></h1> <!-- este h1 solo para generar un espacio, que permita ver incluso con el navbar dinamico -->
-<h1 id="titulo-principal"><cite><strong>- M e n ú s -</strong></cite></h1>
+<h1 id="espacio-invisible"></h1>
+<!-- este h1 solo para generar un espacio, que permita ver incluso con el navbar dinamico -->
+<h1 id="titulo-principal">
+  <cite><strong>- M e n ú s -</strong></cite>
+</h1>
 <div class="container">
   <div id="rowTest" class="row">
-
     <div class="col-12 col-md-6 col-lg-4">
-
-      <div  id="carne-dia" class="card fixed-card">
+      <div id="carne-dia" class="card fixed-card">
         <div class="card-body card-content">
-          <h3 class="card-title" id="title-dia"><cite><b>Menú día</b></cite></h3>
+          <h3 class="card-title" id="title-dia">
+            <cite><b>Menú día</b></cite>
+          </h3>
 
           <h5>{{ menuFirebase.carneDia }}</h5>
-          <img src="{{ menuFirebase.img }}" alt="menu dia" id="imgDia"/>
+          <img src="{{ menuFirebase.img }}" alt="menu dia" id="imgDia" />
           <p class="card-text" id="menuDia">
             <b id="subtitulo-menudia">- Sopas -</b>
-            <br>
+            <br />
             {{ menuFirebase.sopaDia }} - Frijoles - Consome de pescado
-            <br>
+            <br />
             <b id="subtitulo-menudia">- Carnes -</b>
-            <br>
+            <br />
             Res - Cerdo - Chicharrón - Molida - Pechuga - Sobrebarriga Sudada
-            <br>
+            <br />
             <b id="subtitulo-menudia">- Ensaladas -</b>
-            <br>
+            <br />
             {{ menuFirebase.ensalada }}
-            <br>
+            <br />
             <b id="subtitulo-menudia">- Bebidas -</b>
-            <br>
+            <br />
             {{ menuFirebase.bebidaDia }} - Guarapo - Claro - Mazamorra
           </p>
         </div>
       </div>
-
     </div>
 
-
+    <!-- este codigo es por si falla el carrucel, y pondriamos el viejo -->
+    <!--
 @for (plato of menuList; track plato.id) {
     <div class="col-12 col-md-6 col-lg-4">
 
@@ -52,26 +55,93 @@
 
     </div>
     }
+    -->
+    <!-- prueba de carrucel -->
+    @for (plato of menuList; track plato.id) {
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card fixed-card">
+          <h3 class="card-title" id="title-list">
+            <cite
+              ><b>{{ plato.titulo }}</b></cite
+            >
+          </h3>
+
+          <!-- Carrusel de imágenes -->
+          <div id="carousel-{{ plato.id }}" class="carousel slide">
+            <div class="carousel-inner">
+              @for (foto of plato.img; track $index) {
+                <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
+                  <img
+                    src="{{ foto }}"
+                    class="d-block w-100 card-img-top"
+                    alt="{{ plato.titulo }}"
+                  />
+                </div>
+              }
+            </div>
+
+            <!-- Controles e indicadores solo si hay más de una imagen -->
+            @if (plato.img.length > 1) {
+              <button
+                class="carousel-control-prev"
+                type="button"
+                [attr.data-bs-target]="'#carousel-{{plato.id}}'"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                [attr.data-bs-target]="'#carousel-' + plato.id"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+              <div class="carousel-indicators">
+                @for (foto of plato.img; track $index) {
+                  <button
+                    type="button"
+                    [attr.data-bs-target]="'#carousel-' + plato.id"
+                    [attr.data-bs-slide-to]="$index"
+                    class="{{ $index === 0 ? 'active' : '' }}"
+                  ></button>
+                }
+              </div>
+            }
+          </div>
+
+          <div class="card-body card-content">
+            <p class="card-text">
+              {{ plato.ingredientes }}
+            </p>
+            <p class="card-text" id="precio">$ {{ plato.precio }}</p>
+          </div>
+        </div>
+      </div>
+    }
 
     <div class="col-12 col-md-6 col-lg-4">
-
-      <div  id="jugos" class="card fixed-card">
-        <h3 class="card-title" id="title-list"><cite><b>Jugos Naturales</b></cite></h3>
-        <img src="../../assets/fotos/jugosP.webp" class="card-img-top" alt="jugos"/>
+      <div id="jugos" class="card fixed-card">
+        <h3 class="card-title" id="title-list">
+          <cite><b>Jugos Naturales</b></cite>
+        </h3>
+        <img
+          src="../../assets/fotos/jugosP.webp"
+          class="card-img-top"
+          alt="jugos"
+        />
         <div class="card-body card-content">
           <p class="card-text">
-            Jugos en agua o en leche. <br>
+            Jugos en agua o en leche. <br />
             Pregunta por tu sabor favorito.
           </p>
           <p class="card-text" id="precio">
-            En Agua $ 6.000<br>
+            En Agua $ 6.000<br />
             En Leche $ 8.000
           </p>
         </div>
       </div>
-
     </div>
-
-
   </div>
 </div>

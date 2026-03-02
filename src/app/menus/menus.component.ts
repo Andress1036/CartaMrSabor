@@ -1,6 +1,8 @@
 import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import {child, get, getDatabase, ref } from 'firebase/database';
+import { HttpClientJsonpModule } from '@angular/common/http';
+import menuCarrusel from '../../assets/database/menu.json';
 
 import { appFirebase } from '../app.component';
 
@@ -15,6 +17,7 @@ import { appFirebase } from '../app.component';
 export class MenusComponent implements OnInit {
   menuList: any[] = [];
   menuFirebase: any = {};
+
 
   ngOnInit(): void {
     const db = getDatabase(appFirebase);
