@@ -98,16 +98,7 @@
               >
                 <span class="carousel-control-next-icon"></span>
               </button>
-              <div class="carousel-indicators">
-                @for (foto of plato.img; track $index) {
-                  <button
-                    type="button"
-                    [attr.data-bs-target]="'#carousel-' + plato.id"
-                    [attr.data-bs-slide-to]="$index"
-                    class="{{ $index === 0 ? 'active' : '' }}"
-                  ></button>
-                }
-              </div>
+
             }
           </div>
 
