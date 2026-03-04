@@ -78,9 +78,10 @@ img {
   display: grid;
   height: 250px;
 }
-
-.menu-carousel img {
-  touch-action: pinch-zoom;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(41, 34, 33, 0.274);
+  border-radius: 50%;
 }
 
 .card-title{
