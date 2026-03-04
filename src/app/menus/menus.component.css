@@ -79,6 +79,10 @@ img {
   height: 250px;
 }
 
+.menu-carousel img {
+  touch-action: pinch-zoom;
+}
+
 .card-title{
   font-weight: 100;
   margin-top: 7px;
