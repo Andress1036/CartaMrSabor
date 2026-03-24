@@ -16,6 +16,11 @@
 p{
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
+
+#menuDia{
+  line-height: 1.37;
+}
+
 #title-dia{
   border-bottom: 1px solid;
   border-right: 1px solid;
