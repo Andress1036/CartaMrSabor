@@ -89,6 +89,7 @@ img {
   margin-top: 7px;
   display: grid;
   height: 250px;
+  padding: 0px 15px 0px 10px;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -112,3 +113,12 @@ img {
     color: transparent;
 }
 
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}

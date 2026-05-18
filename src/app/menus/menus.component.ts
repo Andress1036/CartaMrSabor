@@ -5,17 +5,20 @@ import { HttpClientJsonpModule } from '@angular/common/http';
 import menuCarrusel from '../../assets/database/menu.json';
 
 import { appFirebase } from '../app.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-menus',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, CommonModule],
   templateUrl: './menus.component.html',
   styleUrl: './menus.component.css',
 })
 export class MenusComponent implements OnInit {
   menuList: any[] = [];
   menuFirebase: any = {};
+  blinking: { [id: number]: boolean } = {};
+
 
   ngOnInit(): void {
     const db = getDatabase(appFirebase);
@@ -25,14 +28,20 @@ export class MenusComponent implements OnInit {
         this.menuFirebase = snapshot.val();
       }
     });
-    get(child(dbRef, 'menu')).then((snapshot) => {
+    get(child(dbRef, 'menu')).then((snapshot) => { // .then() se ejecuta después de obtener los datos de Firebase, es una función asincrónica que maneja la promesa devuelta por get()
       if (snapshot.exists()) {
         this.menuList = Object.values(snapshot.val());
+        this.menuList.forEach((plato) => {
+          this.blinking[plato.id] = true; // inicia el parpadeo
+        });
       }
     });
+
+
+
   }
 
-  // Función para extraer la palabra entre "Menu" y "de" en prueba
+  // Función para extraer la palabra entre "Menu" y ".webp" de la url de img del menu y el casero y los demás
   extraerPalabra(texto: string, id: number): string {
     let splitWord: string;
     switch (id) {
@@ -56,6 +65,10 @@ export class MenusComponent implements OnInit {
     }
     const regex = new RegExp(`${splitWord}(.*?).webp`);
     const match = texto.match(regex);
-    return match ? match[1] : "";
+    return match ? match[1] : '';
+  }
+
+  detenerBlink(id: number) {
+    this.blinking[id] = false; // detiene el parpadeo
   }
 }

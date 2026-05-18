@@ -106,6 +106,8 @@
                 type="button"
                 [attr.data-bs-target]="'#carousel-' + plato.id"
                 data-bs-slide="next"
+                [ngClass]="{ 'blink': blinking[plato.id] }"
+                (click)="detenerBlink(plato.id)"
               >
                 <span class="carousel-control-next-icon"></span>
               </button>
