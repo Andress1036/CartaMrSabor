@@ -13,24 +13,26 @@
           </h3>
 
           <h5>{{ menuFirebase.carneDia }}</h5>
+
           <img src="{{ menuFirebase.img }}" alt="menu dia" id="imgDia" />
           <p class="card-text" id="menuDia">
-            <br>
+            <br />
+            <br />
             <b id="subtitulo-menudia">-🍲 Sopas -</b>
             <br />
             {{ menuFirebase.sopaDia }} - Frijoles - Consome de pescado
             <br />
-            <br>
+            <br />
             <b id="subtitulo-menudia">-🥩 Carnes -</b>
             <br />
             Res - Cerdo - Chicharrón - Molida - Pechuga - Sobrebarriga Sudada
             <br />
-            <br>
+            <br />
             <b id="subtitulo-menudia">-🥗 Ensaladas -</b>
             <br />
             {{ menuFirebase.ensalada }}
             <br />
-            <br>
+            <br />
             <b id="subtitulo-menudia">-🍹 Bebidas -</b>
             <br />
             {{ menuFirebase.bebidaDia }} - Guarapo - Claro - Mazamorra
@@ -71,10 +73,15 @@
           </h3>
 
           <!-- Carrusel de imágenes -->
-          <div id="carousel-{{ plato.id }}" class="carousel slide menu-carousel" data-bs-touch="false">
+          <div
+            id="carousel-{{ plato.id }}"
+            class="carousel slide menu-carousel"
+            data-bs-touch="false"
+          >
             <div class="carousel-inner">
               @for (foto of plato.img; track $index) {
                 <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
+                  <h4 id="foto-subtitulo">{{ extraerPalabra(foto, plato.id) }}</h4>
                   <img
                     src="{{ foto }}"
                     class="d-block w-100 card-img-top"
@@ -102,7 +109,6 @@
               >
                 <span class="carousel-control-next-icon"></span>
               </button>
-
             }
           </div>
 

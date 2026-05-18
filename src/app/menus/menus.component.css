@@ -21,6 +21,13 @@ p{
   line-height: 1.37;
 }
 
+#foto-subtitulo{
+  color: white;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  text-align: center;
+}
+
 #title-dia{
   border-bottom: 1px solid;
   border-right: 1px solid;

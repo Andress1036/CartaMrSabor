@@ -1,11 +1,10 @@
 import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import {child, get, getDatabase, ref } from 'firebase/database';
+import { child, get, getDatabase, ref } from 'firebase/database';
 import { HttpClientJsonpModule } from '@angular/common/http';
 import menuCarrusel from '../../assets/database/menu.json';
 
 import { appFirebase } from '../app.component';
-
 
 @Component({
   selector: 'app-menus',
@@ -17,7 +16,6 @@ import { appFirebase } from '../app.component';
 export class MenusComponent implements OnInit {
   menuList: any[] = [];
   menuFirebase: any = {};
-
 
   ngOnInit(): void {
     const db = getDatabase(appFirebase);
@@ -32,6 +30,32 @@ export class MenusComponent implements OnInit {
         this.menuList = Object.values(snapshot.val());
       }
     });
+  }
 
-}
+  // Función para extraer la palabra entre "Menu" y "de" en prueba
+  extraerPalabra(texto: string, id: number): string {
+    let splitWord: string;
+    switch (id) {
+      case 1:
+        splitWord = 'Menu';
+        break;
+      case 2:
+        splitWord = 'Seco';
+        break;
+      case 3:
+        splitWord = 'Casero';
+        break;
+      case 4:
+        splitWord = 'Bandeja';
+        break;
+      case 5:
+        splitWord = 'Combo';
+        break;
+      default:
+        splitWord = 'Ejecutivo';
+    }
+    const regex = new RegExp(`${splitWord}(.*?).webp`);
+    const match = texto.match(regex);
+    return match ? match[1] : "";
+  }
 }
