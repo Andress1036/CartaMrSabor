@@ -1,48 +1,76 @@
 <h1 id="espacio-invisible"></h1>
 <!-- este h1 solo para generar un espacio, que permita ver incluso con el navbar dinamico -->
-<h1 id="titulo-principal">
-  <cite><strong>- M e n ú s -</strong></cite>
-</h1>
-<div class="container">
-  <div id="rowTest" class="row">
-    <div class="col-12 col-md-6 col-lg-4">
-      <div id="carne-dia" class="card fixed-card">
-        <div class="card-body card-content">
-          <h3 class="card-title" id="title-dia">
-            <cite><b>Menú día</b></cite>
-          </h3>
+ <h2>Elige tu menú</h2>
 
-          <h5>{{ menuFirebase.carneDia }}</h5>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h1 id="headingOne" >
+      <button
+        class="accordion-button custom-center-btn collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+        aria-expanded="false"
+        aria-controls="collapseOne"
+        tabindex="-1"
+      >
+        <cite class="w-100 text-center"><strong> M e n ú s </strong></cite>
+      </button>
+    </h1>
+    <div
+      id="collapseOne"
+      class="accordion-collapse collapse"
+      aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample"
+    >
+      <div class="accordion-body p-0">
 
-          <img src="{{ menuFirebase.img }}" alt="menu dia" id="imgDia" />
-          <p class="card-text" id="menuDia">
-            <br />
-            <br />
-            <b id="subtitulo-menudia">-🍲 Sopas -</b>
-            <br />
-            {{ menuFirebase.sopaDia }} - Frijoles - Consome de pescado
-            <br />
-            <br />
-            <b id="subtitulo-menudia">-🥩 Carnes -</b>
-            <br />
-            Res - Cerdo - Chicharrón - Molida - Pechuga - Sobrebarriga Sudada
-            <br />
-            <br />
-            <b id="subtitulo-menudia">-🥗 Ensaladas -</b>
-            <br />
-            {{ menuFirebase.ensalada }}
-            <br />
-            <br />
-            <b id="subtitulo-menudia">-🍹 Bebidas -</b>
-            <br />
-            {{ menuFirebase.bebidaDia }} - Guarapo - Claro - Mazamorra
-          </p>
-        </div>
-      </div>
-    </div>
 
-    <!-- este codigo es por si falla el carrucel, y pondriamos el viejo -->
-    <!--
+        <div class="container">
+          <div id="rowTest" class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div id="carne-dia" class="card fixed-card">
+                <div class="card-body card-content">
+                  <h3 class="card-title" id="title-dia">
+                    <cite><b>Menú día</b></cite>
+                  </h3>
+
+                  <h5>{{ menuFirebase.carneDia }}</h5>
+
+                  <img
+                    src="{{ menuFirebase.img }}"
+                    alt="menu dia"
+                    id="imgDia"
+                  />
+                  <p class="card-text" id="menuDia">
+                    <br />
+                    <br />
+                    <b id="subtitulo-menudia">-🍲 Sopas -</b>
+                    <br />
+                    {{ menuFirebase.sopaDia }} - Frijoles - Consome de pescado
+                    <br />
+                    <br />
+                    <b id="subtitulo-menudia">-🥩 Carnes -</b>
+                    <br />
+                    Res - Cerdo - Chicharrón - Molida - Pechuga - Sobrebarriga
+                    Sudada
+                    <br />
+                    <br />
+                    <b id="subtitulo-menudia">-🥗 Ensaladas -</b>
+                    <br />
+                    {{ menuFirebase.ensalada }}
+                    <br />
+                    <br />
+                    <b id="subtitulo-menudia">-🍹 Bebidas -</b>
+                    <br />
+                    {{ menuFirebase.bebidaDia }} - Guarapo - Claro - Mazamorra
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- este codigo es por si falla el carrucel, y pondriamos el viejo -->
+            <!--
 @for (plato of menuList; track plato.id) {
     <div class="col-12 col-md-6 col-lg-4">
 
@@ -62,87 +90,97 @@
     </div>
     }
     -->
-    <!-- prueba de carrucel -->
-    @for (plato of menuList; track plato.id) {
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card fixed-card">
-          <h3 class="card-title" id="title-list">
-            <cite
-              ><b>{{ plato.titulo }}</b></cite
-            >
-          </h3>
+            <!-- prueba de carrucel -->
+            @for (plato of menuList; track plato.id) {
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card fixed-card">
+                  <h3 class="card-title" id="title-list">
+                    <cite
+                      ><b>{{ plato.titulo }}</b></cite
+                    >
+                  </h3>
 
-          <!-- Carrusel de imágenes -->
-          <div
-            id="carousel-{{ plato.id }}"
-            class="carousel slide menu-carousel"
-            data-bs-touch="false"
-          >
-            <div class="carousel-inner">
-              @for (foto of plato.img; track $index) {
-                <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
-                  <h4 id="foto-subtitulo">{{ extraerPalabra(foto, plato.id) }}</h4>
-                  <img
-                    src="{{ foto }}"
-                    class="d-block w-100 card-img-top"
-                    alt="{{ plato.titulo }}"
-                  />
+                  <!-- Carrusel de imágenes -->
+                  <div
+                    id="carousel-{{ plato.id }}"
+                    class="carousel slide menu-carousel"
+                    data-bs-touch="false"
+                  >
+                    <div class="carousel-inner">
+                      @for (foto of plato.img; track $index) {
+                        <div
+                          class="carousel-item {{
+                            $index === 0 ? 'active' : ''
+                          }}"
+                        >
+                          <h4 id="foto-subtitulo">
+                            {{ extraerPalabra(foto, plato.id) }}
+                          </h4>
+                          <img
+                            src="{{ foto }}"
+                            class="d-block w-100 card-img-top"
+                            alt="{{ plato.titulo }}"
+                          />
+                        </div>
+                      }
+                    </div>
+
+                    <!-- Controles e indicadores solo si hay más de una imagen -->
+                    @if (plato.img.length > 1) {
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        [attr.data-bs-target]="'#carousel-' + plato.id"
+                        data-bs-slide="prev"
+                      >
+                        <span class="carousel-control-prev-icon"></span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        [attr.data-bs-target]="'#carousel-' + plato.id"
+                        data-bs-slide="next"
+                        [ngClass]="{ blink: blinking[plato.id] }"
+                        (click)="detenerBlink(plato.id)"
+                      >
+                        <span class="carousel-control-next-icon"></span>
+                      </button>
+                    }
+                  </div>
+
+                  <div class="card-body card-content">
+                    <p class="card-text">
+                      {{ plato.ingredientes }}
+                    </p>
+                    <p class="card-text" id="precio">$ {{ plato.precio }}</p>
+                  </div>
                 </div>
-              }
-            </div>
-
-            <!-- Controles e indicadores solo si hay más de una imagen -->
-            @if (plato.img.length > 1) {
-              <button
-                class="carousel-control-prev"
-                type="button"
-                [attr.data-bs-target]="'#carousel-' + plato.id"
-                data-bs-slide="prev"
-              >
-                <span class="carousel-control-prev-icon"></span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                [attr.data-bs-target]="'#carousel-' + plato.id"
-                data-bs-slide="next"
-                [ngClass]="{ 'blink': blinking[plato.id] }"
-                (click)="detenerBlink(plato.id)"
-              >
-                <span class="carousel-control-next-icon"></span>
-              </button>
+              </div>
             }
-          </div>
 
-          <div class="card-body card-content">
-            <p class="card-text">
-              {{ plato.ingredientes }}
-            </p>
-            <p class="card-text" id="precio">$ {{ plato.precio }}</p>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div id="jugos" class="card fixed-card">
+                <h3 class="card-title" id="title-list">
+                  <cite><b>Jugos Naturales</b></cite>
+                </h3>
+                <img
+                  src="../../assets/fotos/menus/jugosP.webp"
+                  class="card-img-top"
+                  alt="jugos"
+                />
+                <div class="card-body card-content">
+                  <p class="card-text">
+                    Jugos en agua o en leche. <br />
+                    Pregunta por tu sabor favorito.
+                  </p>
+                  <p class="card-text" id="precio">
+                    En Agua $ 6.000<br />
+                    En Leche $ 8.000
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    }
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <div id="jugos" class="card fixed-card">
-        <h3 class="card-title" id="title-list">
-          <cite><b>Jugos Naturales</b></cite>
-        </h3>
-        <img
-          src="../../assets/fotos/menus/jugosP.webp"
-          class="card-img-top"
-          alt="jugos"
-        />
-        <div class="card-body card-content">
-          <p class="card-text">
-            Jugos en agua o en leche. <br />
-            Pregunta por tu sabor favorito.
-          </p>
-          <p class="card-text" id="precio">
-            En Agua $ 6.000<br />
-            En Leche $ 8.000
-          </p>
         </div>
       </div>
     </div>

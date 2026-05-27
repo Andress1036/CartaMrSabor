@@ -12,7 +12,12 @@
   width: auto;
   height: auto;
 }
-
+h2{
+  font-weight: 100;
+  color:aliceblue ;
+  text-align: center;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
 p{
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
@@ -37,16 +42,82 @@ p{
   margin-right: 50px;
   padding-bottom: 5px;
 }
-#titulo-principal{
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  border-color: rgb(255, 204, 0);
-  border-radius: 15px;
+
+#headingOne { /* headingOne de prueba*/
+  border: 1px solid #3D3C3A !important;
+  border-radius: 20px !important;
+  background-color: rgb(102, 100, 89) !important;
   margin-left: 30px;
   margin-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 0 !important;
+  /* Quitamos el padding para que el botón interno ocupe todo el espacio */
+
+  /* Aquí fijamos el relieve 3D inicial de forma estricta */
+  border-bottom: 4px solid #1A1918 !important;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5) !important;
+
+  /* Transición para cuando todo el contenedor se hunda */
+  transition: all 0.1s ease-in-out;
+  transform: translateY(0px) !important;
 }
+/*Estilo para saber como es el boton*/
+
+.accordion-button {
+  justify-content: center !important;
+  padding: 15px 1.25rem !important;
+  /* Controla la altura del botón */
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  color: #ffffff !important;
+
+  /* Volvemos transparente el botón de Bootstrap para que no interfiera al cargar */
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 20px !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+/* para darle efecto al estar expandido*/
+#headingOne:has(button.accordion-button:not(.collapsed)) {
+  background-color: #232220 !important;
+  /* Se oscurece el contenedor */
+  border-bottom: 2px solid #1A1918 !important;
+  /* El relieve del contenedor se encoge */
+  transform: translateY(2px) !important;
+  /* El contenedor entero baja 2px */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6) !important;
+}
+
+/*accordion de prueba quita una linea blanca al oprimir el botón */
+.accordion-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+#accordionExample{
+  background-color: transparent;
+  padding: 0px;
+
+}
+.accordion-item{
+  background-color: transparent;
+  border-color: transparent;
+
+  margin: 0px;
+  border-radius: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+/*
+.accordion-button {
+  background-color: transparent;
+  color: aliceblue;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  border-color: rgb(255, 204, 0);
+  text-align: center;
+}
+*/
 #carne-dia{
 
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
@@ -74,7 +145,24 @@ h1{
   text-align: center;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
-
+.accordion-body {
+  background-color: transparent;
+}
+/*
+button.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: aliceblue;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  border-color: rgb(255, 204, 0);
+  text-align: center;
+}
+  */
+  /*
+button{
+  text-align: center;
+  border-color: rgb(255, 204, 0);
+}
+*/
 .fixed-card {
   height: auto;
   /* Tamaño fijo deseado */
