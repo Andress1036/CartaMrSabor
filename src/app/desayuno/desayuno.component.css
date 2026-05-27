@@ -70,3 +70,68 @@ img {
   height: 60px;
   color: transparent;
 }
+
+/* INICIO ACCORDION COMO BOTON */
+#headingDesayunos { /* forma de botón*/
+  /* headingDesayunos de prueba*/
+  border: 1px solid #3D3C3A !important;
+  border-radius: 20px !important;
+  background-color: rgb(102, 100, 89) !important;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 0 !important;
+  /* Quitamos el padding para que el botón interno ocupe todo el espacio */
+
+  /* Aquí fijamos el relieve 3D inicial de forma estricta */
+  border-bottom: 4px solid #1A1918 !important;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5) !important;
+
+  /* Transición para cuando todo el contenedor se hunda */
+  transition: all 0.1s ease-in-out;
+  transform: translateY(0px) !important;
+}
+
+.accordion-button { /* para que el botón se centre y tenga cambio al ser presionado */
+  justify-content: center !important;
+  padding: 15px 1.25rem !important;
+  /* Controla la altura del botón */
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  color: #ffffff !important;
+
+  /* Volvemos transparente el botón de Bootstrap para que no interfiera al cargar */
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 20px !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+h1:has(button.accordion-button:not(.collapsed)) {
+  background-color: #232220 !important;
+  /* Se oscurece el contenedor */
+  border-bottom: 2px solid #1A1918 !important;
+  /* El relieve del contenedor se encoge */
+  transform: translateY(2px) !important;
+  /* El contenedor entero baja 2px */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6) !important;
+}
+
+/*accordion de prueba quita una linea blanca al oprimir el botón */
+.accordion-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+/* Da transparente el item del acordeón y sea vea el fondo de la página */
+.accordion-item {
+  background-color: transparent;
+  border-color: transparent;
+
+  margin: 0px;
+  border-radius: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+/* FIN DE ACCORDION */

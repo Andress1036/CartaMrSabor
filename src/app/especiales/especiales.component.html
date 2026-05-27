@@ -1,33 +1,54 @@
-<h1 id="espacio-invisible"></h1> <!-- este h1 solo para generar un espacio, que permita ver incluso con el navbar dinamico -->
-
-<h1 id="titulo-principal"><cite><strong>- E s p e c i a l e s -</strong></cite></h1>
-
-<div class="container">
-  <div id="rowTest" class="row">
-
-@for (plato of especial; track plato.id) {
-    <div class="col-12 col-md-6 col-lg-4">
-
-      <div class="card fixed-card">
-        <h3 class="card-title" id="title-list"><cite><b>{{ plato.titulo }}</b></cite></h3>
-        <img src="{{ plato.img }}" class="card-img-top" alt="{{ plato.titulo }}"/>
-        <div class="card-body card-content">
-
-          <p class="card-text">
-            {{ plato.ingredientes }}
-          </p>
-          <p class="card-text" id="precio">
-            $ {{ plato.precio }}
-          </p>
+<h1 id="espacio-invisible"></h1>
+<!-- este h1 solo para generar un espacio, que permita ver incluso con el navbar dinamico -->
+<div class="accordion" id="accordionEspeciales">
+  <div class="accordion-item">
+    <h1 id="headingEspeciales">
+      <button
+        class="accordion-button custom-center-btn collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseEspeciales"
+        aria-expanded="false"
+        aria-controls="collapseEspeciales"
+        tabindex="-1"
+      >
+        <cite class="w-100 text-center"><strong>E s p e c i a l e s </strong></cite>
+      </button>
+    </h1>
+    <div
+      id="collapseEspeciales"
+      class="accordion-collapse collapse"
+      aria-labelledby="headingEspeciales"
+      data-bs-parent="#accordionEspeciales"
+    >
+      <div class="accordion-body p-0">
+        <div class="container">
+          <div id="rowTest" class="row">
+            @for (plato of especial; track plato.id) {
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card fixed-card">
+                  <h3 class="card-title" id="title-list">
+                    <cite
+                      ><b>{{ plato.titulo }}</b></cite
+                    >
+                  </h3>
+                  <img
+                    src="{{ plato.img }}"
+                    class="card-img-top"
+                    alt="{{ plato.titulo }}"
+                  />
+                  <div class="card-body card-content">
+                    <p class="card-text">
+                      {{ plato.ingredientes }}
+                    </p>
+                    <p class="card-text" id="precio">$ {{ plato.precio }}</p>
+                  </div>
+                </div>
+              </div>
+            }
+          </div>
         </div>
-
-
       </div>
-
     </div>
-    }
-
-
-
   </div>
 </div>

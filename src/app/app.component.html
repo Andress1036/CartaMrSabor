@@ -1,29 +1,59 @@
-
 <nav id="navbar1" class="navbar navbar-expand-lg justify-content-center">
-
-
   <a id="sabor" class="navbar-brand">
-    <img class="logo" src="../assets/logo sin fondo.png" alt="logo">
-    <img class="titulo" [routerLink]="['']" (click)="scrollToTop()" src="../assets/titulo.png" alt="titulo">
+    <img class="logo" src="../assets/logo sin fondo.png" alt="logo" />
+    <img
+      class="titulo"
+      [routerLink]="['']"
+      (click)="scrollToTop()"
+      src="../assets/titulo.png"
+      alt="titulo"
+    />
   </a>
-
 </nav>
-<nav id="navbar2" class="navbar navbar-expand-lg sticky-top justify-content-center">
+<nav
+  id="navbar2"
+  class="navbar navbar-expand-lg sticky-top justify-content-center"
+>
+  <div class="navbar-nav">
+    <a
+      id="opcion"
+      class="nav-link"
+      [routerLink]="['']"
+      fragment="menus"
+      (click)="scrollToTop()"
+    >
+      <cite><strong>Menús</strong></cite></a
+    >
 
-    <div class="navbar-nav ">
+    <a
+      id="opcion"
+      class="nav-link"
+      [routerLink]="['']"
+      fragment="especiales"
+      (click)="scrollToTop()"
+    >
+      <cite><strong>Especiales</strong></cite></a
+    >
 
-          <a id="opcion" class="nav-link" [routerLink]="['']" fragment="menus" (click)="scrollToTop()">
-            <cite><strong>Menús</strong></cite></a>
+    <a
+      id="opcion"
+      class="nav-link"
+      [routerLink]="['']"
+      fragment="desayuno"
+      (click)="scrollToTop()"
+    >
+      <cite><strong>Desayunos</strong></cite></a
+    >
 
-          <a id="opcion" class="nav-link" [routerLink]="['']" fragment="especiales" (click)="scrollToTop()">
-            <cite><strong>Especiales</strong></cite></a>
-
-          <a id="opcion" class="nav-link" [routerLink]="['']" fragment="desayuno" (click)="scrollToTop()">
-            <cite><strong>Desayunos</strong></cite></a>
-
-           <button id="opcion" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#QR">
-            <cite><strong>QR</strong></cite></button>
-
+    <button
+      id="opcion"
+      type="button"
+      class="btn"
+      data-bs-toggle="modal"
+      data-bs-target="#QR"
+    >
+      <cite><strong>QR</strong></cite>
+    </button>
   </div>
 </nav>
 <div class="modal" tabindex="-1" id="QR">
@@ -31,11 +61,19 @@
     <div class="modal-content" id="QR-div">
       <div class="modal-header">
         <h5 class="modal-title">QR Carta Mr Sabor</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
         ></button>
       </div>
       <div class="modal-body" id="QR-img">
-        <img class="img-fluid" src="../assets/fotos/Carta Mr Sabor.png" alt="logo-cubierto"/>
+        <img
+          class="img-fluid"
+          src="../assets/fotos/Carta Mr Sabor.png"
+          alt="logo-cubierto"
+        />
       </div>
     </div>
   </div>
@@ -43,29 +81,38 @@
 
 <router-outlet />
 <footer>
-<div class="col-12">
-
-      <div  id="carne-dia" class="card fixed-card">
-        <div class="card-body card-content">
-          <h5 class="card-title"><cite><b>Comunicate al:</b></cite></h5>
-          <p class="card-text">
-            +57 3004441729
-          </p>
-          <h5 class="card-title"><cite><b>Estamos en el centro de Medellín sector el Hueco dentro del:</b></cite></h5>
-          <p class="card-text">
-            <a rel="noopener" target="_blank" href="https://www.google.com/maps/place/CENTRO+COMERCIAL+JAPÓN/@6.2489123,-75.5728386,18.32z/data=!4m6!3m5!1s0x8e4428ff846b5bad:0xc11ed2d62ca2ced6!8m2!3d6.2487182!4d-75.5717227!16s%2Fg%2F1tdmwp1h?hl=es&entry=ttu">
-    C. C. Japón local 239 segundo piso en el balcón </a>
-  <img alt="mapa" id="mapa"  src="../assets/mapa.png"  >
-          </p>
-          <h5 class="card-title"><cite><b>Horario:</b></cite></h5>
-          <p class="card-text">
-            Lunes a Sábado <br>
-            8:30 am - 5:00 pm
-          </p>
-        </div>
+  <div class="col-12">
+    <div id="carne-dia" class="card fixed-card">
+      <div class="card-body card-content">
+        <h5 class="card-title">
+          <cite><b>Comunicate al:</b></cite>
+        </h5>
+        <p class="card-text">+57 3004441729</p>
+        <h5 class="card-title">
+          <cite
+            ><b
+              >Estamos en el centro de Medellín sector el Hueco dentro del:</b
+            ></cite
+          >
+        </h5>
+        <p class="card-text">
+          <a
+            rel="noopener"
+            target="_blank"
+            href="https://www.google.com/maps/place/CENTRO+COMERCIAL+JAPÓN/@6.2489123,-75.5728386,18.32z/data=!4m6!3m5!1s0x8e4428ff846b5bad:0xc11ed2d62ca2ced6!8m2!3d6.2487182!4d-75.5717227!16s%2Fg%2F1tdmwp1h?hl=es&entry=ttu"
+          >
+            C. C. Japón local 239 segundo piso en el balcón
+          </a>
+          <img alt="mapa" id="mapa" src="../assets/mapa.png" />
+        </p>
+        <h5 class="card-title">
+          <cite><b>Horario:</b></cite>
+        </h5>
+        <p class="card-text">
+          Lunes a Sábado <br />
+          8:30 am - 5:00 pm
+        </p>
       </div>
-
     </div>
-    </footer>
-
-
+  </div>
+</footer>

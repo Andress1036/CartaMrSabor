@@ -42,8 +42,8 @@ p{
   margin-right: 50px;
   padding-bottom: 5px;
 }
-
-#headingOne { /* headingOne de prueba*/
+/* INICIO ACCORDION COMO BOTON */
+#headingMenus { /* headingOne de prueba*/
   border: 1px solid #3D3C3A !important;
   border-radius: 20px !important;
   background-color: rgb(102, 100, 89) !important;
@@ -78,7 +78,7 @@ p{
   transform: none !important;
 }
 /* para darle efecto al estar expandido*/
-#headingOne:has(button.accordion-button:not(.collapsed)) {
+h1:has(button.accordion-button:not(.collapsed)) {
   background-color: #232220 !important;
   /* Se oscurece el contenedor */
   border-bottom: 2px solid #1A1918 !important;
@@ -94,12 +94,8 @@ p{
   box-shadow: none !important;
   background-color: transparent !important;
 }
-#accordionExample{
-  background-color: transparent;
-  padding: 0px;
 
-}
-.accordion-item{
+.accordion-item{ /* Transparencia para ver el fondo de la página */
   background-color: transparent;
   border-color: transparent;
 
@@ -109,15 +105,8 @@ p{
   padding-bottom: 0px;
 
 }
-/*
-.accordion-button {
-  background-color: transparent;
-  color: aliceblue;
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-  border-color: rgb(255, 204, 0);
-  text-align: center;
-}
-*/
+/* FIN DE ACCORDION */
+
 #carne-dia{
 
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
@@ -145,24 +134,8 @@ h1{
   text-align: center;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
-.accordion-body {
-  background-color: transparent;
-}
-/*
-button.accordion-button:not(.collapsed) {
-  background-color: transparent;
-  color: aliceblue;
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-  border-color: rgb(255, 204, 0);
-  text-align: center;
-}
-  */
-  /*
-button{
-  text-align: center;
-  border-color: rgb(255, 204, 0);
-}
-*/
+
+
 .fixed-card {
   height: auto;
   /* Tamaño fijo deseado */
