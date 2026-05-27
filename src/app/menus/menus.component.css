@@ -1,10 +1,11 @@
 .card {
   margin-top: 7px;
   background-color: transparent;
-  border-color: rgb(255, 204, 0);
+  border-bottom: 1px solid;
+  border-bottom-color: rgb(255, 204, 0);
   color: aliceblue;
   margin-bottom: 4px;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 #imgDia {
@@ -78,7 +79,7 @@ p{
   transform: none !important;
 }
 /* para darle efecto al estar expandido*/
-h1:has(button.accordion-button:not(.collapsed)) {
+#headingMenus:has(button.accordion-button:not(.collapsed)) {
   background-color: #232220 !important;
   /* Se oscurece el contenedor */
   border-bottom: 2px solid #1A1918 !important;
@@ -111,8 +112,8 @@ h1:has(button.accordion-button:not(.collapsed)) {
 
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   text-align: center;
-  border: 2px solid;
-  border-color: rgb(255, 204, 0);
+  border-bottom: 1px solid;
+  border-bottom-color: rgb(255, 204, 0);
   border-radius: 25px;
 }
 
