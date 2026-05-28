@@ -90,6 +90,9 @@ body {
   margin-bottom: 5px;
 }
 
+#O{
+  margin-top: 10px;
+}
 .card {
   margin-top: 7px;
   margin-left: 5px;
@@ -111,4 +114,53 @@ body {
   background-color: rgba(0, 0, 0, 0.888);
   color: white;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+#direccion{
+  text-decoration: none !important;
+    /* Quita la línea azul subrayada */
+    color: #FFCC00 !important;
+    /* Le da tu color dorado característico */
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.2s ease;
+}
+
+.link-whatsapp {
+  text-decoration: none !important;
+  /* Quita la línea azul subrayada */
+  color: #FFCC00 !important;
+  /* Le da tu color dorado característico */
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.2s ease;
+}
+
+.link-whatsapp:hover {
+  opacity: 0.8;
+  /* Hace que brille sutilmente al pasar el dedo o el mouse */
+}
+
+.link-llamada {
+  text-decoration: none !important;
+  /* Quita el subrayado azul feo */
+  color: #FFCC00 !important;
+  /* Tu dorado característico */
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.2s ease;
+}
+
+.link-llamada:hover {
+  opacity: 0.8;
+  /* Efecto sutil al tocarlo */
 }
