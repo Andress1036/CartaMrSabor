@@ -24,6 +24,7 @@
   --modal-bg: rgba(0, 0, 0, 0.888);
   --modal-text: white;
   --close-filter: invert(1);
+  --img-shadow: rgba(0, 0, 0, 0.6);
 }
 
 :root[data-theme="light"] {
@@ -47,6 +48,7 @@
   --modal-bg: #f4edd3;
   --modal-text: #1f1c17;
   --close-filter: none;
+  --img-shadow: rgba(0, 0, 0, 0.45);
 }
 
 @media (prefers-color-scheme: light) {
@@ -71,6 +73,7 @@
     --modal-bg: #f4edd3;
     --modal-text: #1f1c17;
     --close-filter: none;
+    --img-shadow: rgba(0, 0, 0, 0.45);
   }
 }
 
@@ -83,4 +86,9 @@ html body {
 
 .btn-close {
   filter: var(--close-filter);
+}
+
+/* Sombra bajo las fotos de los platos (siguen la silueta por ser .webp con transparencia) */
+.card img:not(#mapa) {
+  filter: drop-shadow(0 6px 6px var(--img-shadow));
 }
