@@ -1,12 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
-body{
-  /* background-image: url('./assets/tablero2.jpg'); */
-  background-image: linear-gradient(rgb(9, 9, 9), rgb(2, 1, 1), rgb(9, 9, 9),rgb(4, 4, 4), rgb(9, 9, 9));
-
-
+/* ===== TEMAS =====
+   Oscuro = apariencia original (por defecto).
+   Claro  = fondo crema con texto oscuro.
+   Auto   = sin atributo data-theme: sigue la preferencia del sistema.
+   El atributo data-theme ("light" | "dark") lo pone ThemeService en <html>. */
+:root {
+  color-scheme: dark;
+  --bg-color: darkgoldenrod;
+  --bg-image: linear-gradient(rgb(9, 9, 9), rgb(2, 1, 1), rgb(9, 9, 9), rgb(4, 4, 4), rgb(9, 9, 9));
+  --text: aliceblue;
+  --text-strong: white;
+  --nav-bg: black;
+  --nav-text: blanchedalmond;
+  --accent: rgb(255, 204, 0);
+  --link: #ffcc00;
+  --subtitle: rgba(255, 204, 0, 0.769);
+  --btn-bg: rgb(102, 100, 89);
+  --btn-bg-open: #232220;
+  --btn-border: #3d3c3a;
+  --btn-edge: #1a1918;
+  --btn-text: #ffffff;
+  --btn-shadow: rgba(0, 0, 0, 0.5);
+  --btn-shadow-open: rgba(0, 0, 0, 0.6);
+  --modal-bg: rgba(0, 0, 0, 0.888);
+  --modal-text: white;
+  --close-filter: invert(1);
 }
 
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg-color: #f4edd3;
+  --bg-image: none;
+  --text: #1f1c17;
+  --text-strong: #14110d;
+  --nav-bg: #ece3c0;
+  --nav-text: #2b2519;
+  --accent: #b8860b;
+  --link: #7a5a00;
+  --subtitle: #8a6508;
+  --btn-bg: #dcd2aa;
+  --btn-bg-open: #cfc494;
+  --btn-border: #b9ad7f;
+  --btn-edge: #a89c6d;
+  --btn-text: #1f1c17;
+  --btn-shadow: rgba(80, 65, 20, 0.35);
+  --btn-shadow-open: rgba(80, 65, 20, 0.45);
+  --modal-bg: #f4edd3;
+  --modal-text: #1f1c17;
+  --close-filter: none;
+}
 
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    color-scheme: light;
+    --bg-color: #f4edd3;
+    --bg-image: none;
+    --text: #1f1c17;
+    --text-strong: #14110d;
+    --nav-bg: #ece3c0;
+    --nav-text: #2b2519;
+    --accent: #b8860b;
+    --link: #7a5a00;
+    --subtitle: #8a6508;
+    --btn-bg: #dcd2aa;
+    --btn-bg-open: #cfc494;
+    --btn-border: #b9ad7f;
+    --btn-edge: #a89c6d;
+    --btn-text: #1f1c17;
+    --btn-shadow: rgba(80, 65, 20, 0.35);
+    --btn-shadow-open: rgba(80, 65, 20, 0.45);
+    --modal-bg: #f4edd3;
+    --modal-text: #1f1c17;
+    --close-filter: none;
+  }
+}
 
+/* "html body" para ganarle a la regla de Bootstrap, que se carga después */
+html body {
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  color: var(--text);
+}
 
-
+.btn-close {
+  filter: var(--close-filter);
+}

@@ -3,12 +3,12 @@ a{
 }
 h1 {
   font-weight: 100;
-  color:aliceblue ;
+  color: var(--text);
   text-align: center;
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 footer {
-  color:aliceblue;
+  color: var(--text);
   text-align: center;
   background-color: transparent;
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
@@ -22,7 +22,7 @@ p{
 }
 
 .navbar{
-  background-color:black ;
+  background-color: var(--nav-bg);
 
 }
 
@@ -30,8 +30,8 @@ p{
   transition: top 0.3s;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
-  background-color: black;
-  border-bottom: 1px solid rgb(255, 204, 0);
+  background-color: var(--nav-bg);
+  border-bottom: 1px solid var(--accent);
 }
 
 .img-fluid{
@@ -51,9 +51,6 @@ p{
   padding-right: 5px;
 }
 
-body {
-  background-color: darkgoldenrod;
-}
 
 .logo{
   width: 80px;
@@ -72,14 +69,14 @@ body {
 }
 
 #opcion{
-  color: blanchedalmond;
+  color: var(--nav-text);
   margin-right: 5px;
 }
 
 #opcion:focus {
-  background-color:black;
+  background-color: var(--nav-bg);
   border-radius: 5px;
-  border-bottom: 2px solid rgb(255, 204, 0);
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 1px;
   margin-bottom: 5px;
 }
@@ -99,7 +96,7 @@ body {
   margin-right: 5px;
   background-color: transparent;
   border-color: transparent;
-  color: aliceblue;
+  color: var(--text);
   margin-bottom: 4px;
   display: block;
 }
@@ -111,15 +108,15 @@ body {
 
 
 #QR-div{
-  background-color: rgba(0, 0, 0, 0.888);
-  color: white;
+  background-color: var(--modal-bg);
+  color: var(--modal-text);
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
 #direccion{
   text-decoration: none !important;
     /* Quita la línea azul subrayada */
-    color: #FFCC00 !important;
+    color: var(--link) !important;
     /* Le da tu color dorado característico */
     font-family: "Playfair Display", Georgia, serif;
     font-size: 18px;
@@ -132,7 +129,7 @@ body {
 .link-whatsapp {
   text-decoration: none !important;
   /* Quita la línea azul subrayada */
-  color: #FFCC00 !important;
+  color: var(--link) !important;
   /* Le da tu color dorado característico */
   font-family: "Playfair Display", Georgia, serif;
   font-size: 18px;
@@ -150,7 +147,7 @@ body {
 .link-llamada {
   text-decoration: none !important;
   /* Quita el subrayado azul feo */
-  color: #FFCC00 !important;
+  color: var(--link) !important;
   /* Tu dorado característico */
   font-family: "Playfair Display", Georgia, serif;
   font-size: 18px;

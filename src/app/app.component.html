@@ -54,6 +54,17 @@
     >
       <cite><strong>QR</strong></cite>
     </button>
+
+    <button
+      id="opcion"
+      type="button"
+      class="btn"
+      (click)="cycleTheme()"
+      [attr.aria-label]="'Tema: ' + themeLabels[theme]"
+      [title]="'Tema: ' + themeLabels[theme]"
+    >
+      {{ themeIcons[theme] }}
+    </button>
   </div>
 </nav>
 <div class="modal" tabindex="-1" id="QR">
@@ -89,7 +100,7 @@
         <h5 class="card-title">
           <cite><b>Comunícate al:</b></cite>
         </h5>
-        <a href="tel:+573001234567" class="link-llamada">
+        <a href="tel:+573004441729" class="link-llamada">
           <span>📞 Llamar: +57 300 444 1729</span>
         </a>
         <h5 id="O">Ó</h5>

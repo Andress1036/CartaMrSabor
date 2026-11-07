@@ -25,7 +25,35 @@ export const appFirebase = initializeApp(firebaseConfig);
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent{
+export class AppComponent implements OnInit {
+  // 'auto' sigue la preferencia del sistema; 'light'/'dark' la fuerzan
+  theme: 'auto' | 'light' | 'dark' = 'auto';
+  readonly themeIcons = { auto: '🌗', light: '☀️', dark: '🌙' };
+  readonly themeLabels = { auto: 'Automático', light: 'Claro', dark: 'Oscuro' };
+
+  ngOnInit(): void {
+    try {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light' || saved === 'dark') this.theme = saved;
+    } catch {}
+    this.applyTheme();
+  }
+
+  cycleTheme(): void {
+    const order: ('auto' | 'light' | 'dark')[] = ['auto', 'light', 'dark'];
+    this.theme = order[(order.indexOf(this.theme) + 1) % order.length];
+    try {
+      if (this.theme === 'auto') localStorage.removeItem('theme');
+      else localStorage.setItem('theme', this.theme);
+    } catch {}
+    this.applyTheme();
+  }
+
+  private applyTheme(): void {
+    const root = document.documentElement;
+    if (this.theme === 'auto') root.removeAttribute('data-theme');
+    else root.setAttribute('data-theme', this.theme);
+  }
 
   scrollToTop(): void{
     window.scrollTo({
