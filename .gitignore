@@ -43,3 +43,6 @@ Thumbs.db
 
 # Conflicto con la github
 /df
+
+# Imagenes de referencia para generar fotos con IA (no van en el proyecto)
+/referencias_gemini
