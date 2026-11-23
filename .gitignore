@@ -46,3 +46,6 @@ Thumbs.db
 
 # Imagenes de referencia para generar fotos con IA (no van en el proyecto)
 /referencias_gemini
+
+# Configuracion local de Claude Code (no va en el proyecto)
+/.claude
