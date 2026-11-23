@@ -68,6 +68,52 @@ export class MenusComponent implements OnInit {
     return match ? match[1] : '';
   }
 
+  // ---- Deslizar el dedo para cambiar de foto en los carruseles ----
+  // No usamos el touch nativo de Bootstrap (data-bs-touch) porque le pone
+  // "touch-action: pan-y" al carrusel y eso bloquea el zoom con dos dedos.
+  // Aquí solo se cambia de foto con UN dedo, un gesto claramente horizontal y
+  // sin zoom aplicado; con dos dedos (pellizco) o con la página ampliada no se toca nada.
+  private touchStartX = 0;
+  private touchStartY = 0;
+  private touchMultiple = false;
+  private readonly swipeMin = 50; // px mínimos para contar como deslizamiento
+
+  onTouchStart(event: TouchEvent): void {
+    if (event.touches.length > 1) {
+      this.touchMultiple = true; // es un pellizco (zoom), no un deslizamiento
+      return;
+    }
+    this.touchMultiple = false;
+    this.touchStartX = event.touches[0].clientX;
+    this.touchStartY = event.touches[0].clientY;
+  }
+
+  // El navegador cancela el gesto (por ejemplo al tomar él el zoom): no hacer nada
+  onTouchCancel(): void {
+    this.touchMultiple = false;
+  }
+
+  onTouchEnd(event: TouchEvent, id: number): void {
+    if (event.touches.length > 0) return; // todavía queda algún dedo apoyado
+    const huboPellizco = this.touchMultiple;
+    this.touchMultiple = false;
+    if (huboPellizco) return;
+    // Con la página ampliada, deslizar sirve para moverse por la imagen
+    if ((window.visualViewport?.scale ?? 1) > 1.01) return;
+
+    const touch = event.changedTouches[0];
+    const dx = touch.clientX - this.touchStartX;
+    const dy = touch.clientY - this.touchStartY;
+    if (Math.abs(dx) < this.swipeMin || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+
+    // Se usa el botón del carrusel para conservar su animación y el fin del parpadeo
+    const carrusel = document.getElementById('carousel-' + id);
+    const boton = carrusel?.querySelector<HTMLElement>(
+      dx < 0 ? '.carousel-control-next' : '.carousel-control-prev'
+    );
+    boton?.click();
+  }
+
   detenerBlink(id: number) {
     this.blinking[id] = false; // detiene el parpadeo
   }

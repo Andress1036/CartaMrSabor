@@ -101,6 +101,9 @@
                     id="carousel-{{ plato.id }}"
                     class="carousel slide menu-carousel"
                     data-bs-touch="false"
+                    (touchstart)="onTouchStart($event)"
+                    (touchend)="onTouchEnd($event, plato.id)"
+                    (touchcancel)="onTouchCancel()"
                   >
                     <div class="carousel-inner">
                       @for (foto of plato.img; track $index) {
