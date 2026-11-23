@@ -25,6 +25,7 @@
   --modal-text: white;
   --close-filter: invert(1);
   --img-shadow: rgba(0, 0, 0, 0.6);
+  --text-stroke: 0;
 }
 
 :root[data-theme="light"] {
@@ -49,6 +50,7 @@
   --modal-text: #1f1c17;
   --close-filter: none;
   --img-shadow: rgba(0, 0, 0, 0.45);
+  --text-stroke: 0.3px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -74,6 +76,7 @@
     --modal-text: #1f1c17;
     --close-filter: none;
     --img-shadow: rgba(0, 0, 0, 0.45);
+    --text-stroke: 0.3px;
   }
 }
 
@@ -82,6 +85,14 @@ html body {
   background-color: var(--bg-color);
   background-image: var(--bg-image);
   color: var(--text);
+  /* Texto oscuro sobre fondo claro se ve mas delgado: se engrosa apenas en el tema claro */
+  -webkit-text-stroke: var(--text-stroke);
+}
+
+/* Quita el borde gris de Bootstrap en las tarjetas (se notaba en claro; en oscuro era negro sobre negro).
+   La linea dorada de abajo la define cada componente y no cambia. */
+html .card {
+  --bs-card-border-color: transparent;
 }
 
 .btn-close {
